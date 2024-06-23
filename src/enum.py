@@ -1,5 +1,4 @@
-{
-    "model_names": [
+model_names = [
     "Convolutional Neural Network",
     "Decision Tree",
     "K-Nearest Neighbors",
@@ -59,9 +58,10 @@
     "Simulated Annealing",
     "Particle Swarm Optimization",
     "Ant Colony Optimization",
-    "Fuzzy Logic Systems"
-    ],
-    "model_types": [
+    "Fuzzy Logic Systems",
+]
+
+model_types = [
     "Anomaly Detection",
     "Association Rule Learning",
     "Classification",
@@ -106,6 +106,5 @@
     "Evolutionary Algorithms",
     "Stochastic Processes",
     "Quantum Machine Learning",
-    "Hybrid Models"
-    ]
-    }
+    "Hybrid Models",
+]
