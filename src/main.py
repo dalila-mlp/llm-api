@@ -54,9 +54,9 @@ def model_query(content: str, model_names: str, model_types: str) -> dict:
                             Voici le contenu d'un fichier Python: {content}
                             Voici une liste de nom de modèle parmi lesquels choisir: {model_names}
                             Voici une liste de types de modèles parmi lesquels choisir: {model_types}
-                            Quel modèle est utilisé dans ce fichier et quels sont les metrics les plus adaptés pour ce code. 
-                            Je veux une sortie uniquement dans ce format exact rien d'autre:
-                            'model_name: Logistic Regression; model_type: Classification;'
+                            Quel modèle est utilisé dans ce fichier et quels sont les metrics les plus adaptés pour ce code.
+                            Je veux une sortie uniquement dans ce format exact rien d'autre: 'model_name: XXX; model_type: XXX;'.
+                            Ne retire pas les espaces entre les mots des valeurs XXX pour model_name et model_type. 
                         """,
                     },
                 ],
@@ -85,4 +85,5 @@ def get_model_info(request: ModelInfoRequest) -> dict:
     ):
         raise HTTPException(status_code=400, detail=resultat["error"])
 
+    print(resultat)
     return resultat
