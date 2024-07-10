@@ -85,5 +85,4 @@ def get_model_info(request: ModelInfoRequest) -> dict:
     ):
         raise HTTPException(status_code=400, detail=resultat["error"])
 
-    print(resultat)
     return resultat
